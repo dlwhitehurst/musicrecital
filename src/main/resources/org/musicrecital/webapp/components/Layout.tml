@@ -27,7 +27,29 @@
             <t:menuitem name="Home" title="home.title" page="home" roles="ROLE_ADMIN,ROLE_USER"/>
             <t:menuitem name="UserMenu" title="menu.user" page="home.editprofile"
                         roles="ROLE_ADMIN,ROLE_USER"/>
+            
             <!-- Add new menu items here -->
+            <t:menuitem name="ListenerMenu" title="menu.listener" roles="ROLE_LISTENER"
+                        class="dropdown" data-toggle="dropdown">
+                <ul class="dropdown-menu">
+                    <t:delegate to="block:listenerItemsBlock"/>
+                </ul>
+            </t:menuitem>
+
+            <t:menuitem name="PerformerMenu" title="menu.performer" roles="ROLE_PERFORMER"
+                        class="dropdown" data-toggle="dropdown">
+                <ul class="dropdown-menu">
+                    <t:delegate to="block:performerItemsBlock"/>
+                </ul>
+            </t:menuitem>
+
+            <t:menuitem name="ManagerMenu" title="menu.manager" roles="ROLE_MANAGER"
+                        class="dropdown" data-toggle="dropdown">
+                <ul class="dropdown-menu">
+                    <t:delegate to="block:managerItemsBlock"/>
+                </ul>
+            </t:menuitem>
+            
             <t:menuitem name="AdminMenu" title="menu.admin" roles="ROLE_ADMIN"
                         class="dropdown" data-toggle="dropdown">
                 <ul class="dropdown-menu">
@@ -66,6 +88,27 @@
             <t:delegate to="block:adminItemsBlock"/>
         </t:menu>
     </div>
+</t:block>
+
+<t:block id="listenerItemsBlock">
+    <t:menuitem name="ViewUsers" title="menu.admin.users" page="admin/userlist"/>
+    <t:menuitem name="ActiveUsers" title="home.activeUsers" page="admin/activeusers"/>
+    <t:menuitem name="ReloadContext" title="menu.admin.reload" page="admin/reload"/>
+    <t:menuitem name="FileUpload" title="menu.selectFile" page="fileupload"/>
+</t:block>
+
+<t:block id="performanceItemsBlock">
+    <t:menuitem name="ViewUsers" title="menu.admin.users" page="admin/userlist"/>
+    <t:menuitem name="ActiveUsers" title="home.activeUsers" page="admin/activeusers"/>
+    <t:menuitem name="ReloadContext" title="menu.admin.reload" page="admin/reload"/>
+    <t:menuitem name="FileUpload" title="menu.selectFile" page="fileupload"/>
+</t:block>
+
+<t:block id="managerItemsBlock">
+    <t:menuitem name="ViewUsers" title="menu.admin.users" page="admin/userlist"/>
+    <t:menuitem name="ActiveUsers" title="home.activeUsers" page="admin/activeusers"/>
+    <t:menuitem name="ReloadContext" title="menu.admin.reload" page="admin/reload"/>
+    <t:menuitem name="FileUpload" title="menu.selectFile" page="fileupload"/>
 </t:block>
 
 <t:block id="adminItemsBlock">
