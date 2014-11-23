@@ -6,7 +6,7 @@
             </t:if>
         </span>
         <span class="col-sm-6 text-right">
-            &copy; ${message:copyright.year} <a href="${message:company.url}"> ${message:company.name}</a>
+           &copy; ${message:copyright.year} <a href="${message:company.url}"> ${message:company.name}</a>
         </span>
     </div>
 </t:container>

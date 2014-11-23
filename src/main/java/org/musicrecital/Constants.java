@@ -70,6 +70,21 @@ public final class Constants {
     public static final String USER_ROLE = "ROLE_USER";
 
     /**
+     * The name of the Listener role, as specified in web.xml
+     */
+    public static final String LISTENER_ROLE = "ROLE_LISTENER";
+
+    /**
+     * The name of the Performer role, as specified in web.xml
+     */
+    public static final String PERFORMER_ROLE = "ROLE_PERFORMER";
+
+    /**
+     * The name of the Manager role, as specified in web.xml
+     */
+    public static final String MANAGER_ROLE = "ROLE_MANAGER";
+
+    /**
      * The name of the user's role list, a request-scoped attribute
      * when adding/editing a user.
      */
