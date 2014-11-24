@@ -45,16 +45,16 @@
             <value description="id">-2</value>
             <value description="username">admin</value>
             <value description="password">$2a$10$bH/ssqW8OhkTlIso9/yakubYODUOmh.6m5HEJvcBq3t3VdBh7ebqO</value>
-            <value description="first_name">Matt</value>
-            <value description="last_name">Raible</value>
-            <value description="address"></value>
-            <value description="city">Denver</value>
+            <value description="first_name">David</value>
+            <value description="last_name">Whitehurst</value>
+            <value description="address">2932 Tram Road</value>
+            <value description="city">Fuquay Varina</value>
             <value description="country">US</value>
-            <value description="email">matt@raibledesigns.com</value>
+            <value description="email">dlwhitehurst@me.com</value>
             <value description="phone_number"></value>
-            <value description="postal_code">80210</value>
-            <value description="province">CO</value>
-            <value description="website">http://raibledesigns.com</value>
+            <value description="postal_code">27526</value>
+            <value description="province">NC</value>
+            <value description="website">http://dlwhitehurst.wordpress.com</value>
             <value description="password_hint"><![CDATA[Not a female kitty.]]></value>
             <value description="version">1</value>
             <value description="account_enabled">1</value>
@@ -98,6 +98,27 @@
             <value description="name">ROLE_USER</value>
             <value description="description"><![CDATA[Default role for all Users]]></value>
         </row>
+        <row>
+            <value description="id">-3</value>
+            <value description="name">ROLE_LISTENER</value>
+            <value description="description"><![CDATA[User role for all Listeners]]></value>
+        </row>
+        <row>
+            <value description="id">-4</value>
+            <value description="name">ROLE_PERFORMER</value>
+            <value description="description"><![CDATA[User role for all Performers]]></value>
+        </row>
+        <row>
+            <value description="id">-5</value>
+            <value description="name">ROLE_ACCOMPANIST</value>
+            <value description="description"><![CDATA[User role for all Accompanists]]></value>
+        </row>
+        <row>
+            <value description="id">-6</value>
+            <value description="name">ROLE_COORDINATOR</value>
+            <value description="description"><![CDATA[User role for all MusicRecitalCoordinators]]></value>
+        </row>
+
     </table>
     <table name="user_role">
         <column>user_id</column>
