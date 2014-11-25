@@ -27,7 +27,8 @@ import java.io.Serializable;
  *
  * @author Serge Eby
  * @author modifications <a href="mailto:dlwhitehurst@gmail.com">David L. Whitehurst</a>
- * @version $Id:$
+ * @version $Id$
+ * 
  */
 public class FileData implements Serializable {
 
