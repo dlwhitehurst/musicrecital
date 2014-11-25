@@ -1,8 +1,13 @@
-AppFuse Basic Tapestry Archetype
+Welcome to the MusicRecital Java EE Web Application
 --------------------------------------------------------------------------------
-If you're reading this then you've created your new project using Maven and
-MusicRecital.  You have only created the shell of an AppFuse Java EE
-application.  The project object model (pom) is defined in the file pom.xml.
+If you're reading this then you've probably cloned the repository at GitHub. 
+MusicRecital.  You have just copied the source for this application and set
+up a Git repository in this directory structure. 
+
+The application was derived-from or started with an AppFuse archetype. The
+model was a single module Tapestry framework and it uses AppFuse 3.0.0
+ 
+The project object model (pom) is defined in the file pom.xml.
 The application is ready to run as a web application. The pom.xml file is
 pre-defined with Hibernate as a persistence model and Tapestry as the web
 framework.
@@ -14,7 +19,11 @@ To get started, please complete the following steps:
 
 2. Run "mvn jetty:run" and view the application at http://localhost:8080.
 
-3. More information can be found at:
+3. Please post questions for this application on Google+ public community
+   "MusicRecital"
 
-   http://appfuse.org/display/APF/AppFuse+QuickStart
+4. More information can be found later at: www.musicrecital.org when the site is
+   running. Currently, the development site is not hosted. Communicate via
+   the Google+ community "MusicRecital" for now.
+
 

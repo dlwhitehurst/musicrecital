@@ -12,6 +12,15 @@ import java.io.Serializable;
 public abstract class BaseObject implements Serializable {    
 
     /**
+	 * unique serial identifier, will probably never be used, not sure 
+	 * considering class will never be instantiated. Eclipse warns because
+	 * Serializable is implemented but instantiated classes should not
+	 * have to implement Serializable.
+	 *  
+	 */
+	private static final long serialVersionUID = -1766357336987264790L;
+
+	/**
      * Returns a multi-line String with key=value pairs.
      * @return a String representation of this class.
      */
@@ -27,7 +36,7 @@ public abstract class BaseObject implements Serializable {
 
     /**
      * When you override equals, you should override hashCode. See "Why are
-     * equals() and hashCode() importation" for more information:
+     * equals() and hashCode() important" for more information:
      * http://www.hibernate.org/109.html
      * @return hashCode
      */
