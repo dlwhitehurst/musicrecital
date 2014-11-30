@@ -28,6 +28,7 @@
 
 package org.musicrecital.model.producer;
 
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -82,6 +83,27 @@ public class MusicProgram extends BaseObject {
 	 * 
 	 */
 	protected Set<Piece> pieces = new HashSet<Piece>(); // empty but not-null set
+	
+	/**
+	 * 
+	 */
+	protected Date created;
+	
+	/**
+	 * 
+	 */
+	protected Date modified;
+	
+	/**
+	 * 
+	 */
+	protected Long createdBy;
+	
+	/**
+	 * 
+	 */
+	protected Long modifiedBy;
+	
 
 	/* (non-Javadoc)
 	 * @see org.musicrecital.model.BaseObject#toString()
@@ -178,5 +200,61 @@ public class MusicProgram extends BaseObject {
 	 */
 	public void setPieces(Set<Piece> pieces) {
 		this.pieces = pieces;
+	}
+
+	/**
+	 * @return the created
+	 */
+	public Date getCreated() {
+		return created;
+	}
+
+	/**
+	 * @param created the created to set
+	 */
+	public void setCreated(Date created) {
+		this.created = created;
+	}
+
+	/**
+	 * @return the modified
+	 */
+	public Date getModified() {
+		return modified;
+	}
+
+	/**
+	 * @param modified the modified to set
+	 */
+	public void setModified(Date modified) {
+		this.modified = modified;
+	}
+
+	/**
+	 * @return the createdBy
+	 */
+	public Long getCreatedBy() {
+		return createdBy;
+	}
+
+	/**
+	 * @param createdBy the createdBy to set
+	 */
+	public void setCreatedBy(Long createdBy) {
+		this.createdBy = createdBy;
+	}
+
+	/**
+	 * @return the modifiedBy
+	 */
+	public Long getModifiedBy() {
+		return modifiedBy;
+	}
+
+	/**
+	 * @param modifiedBy the modifiedBy to set
+	 */
+	public void setModifiedBy(Long modifiedBy) {
+		this.modifiedBy = modifiedBy;
 	}
 }
