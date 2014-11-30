@@ -4,10 +4,16 @@ Actors
 Appfuse First
 User, Admin (User with set Role)
 
-User logs in and then makes a request to be a Coordinator and a Performer.
-User logs in and then makes a request to be a Listener and VenueHost
-User logs in and then makes a request to be a Listener
-User logs in and then makes a request to be an Accompanist
-
 NOTE: all users register and then provide their interest to be a part of the MusicRecital
-local community. 
+local community.
+
+Two paths of development first.
+
+1. Create MusicProgram and MusicEvent
+2. Survey the newly registered user and build a set of roles to match his profile.
+
+For 1) build objects, dao and service layer, test. For 2) determine design and prototype. When complete,
+wrap operations with role authorization. And, create responsibility defining positions, Director, Producer,
+Performer, Accompanist, Composer, Songwriter, ...
+
+The Roles can be part of the UI operations after the basic operations have been created and tested.
