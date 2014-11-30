@@ -1,0 +1,13 @@
+Actors
+#######
+
+Appfuse First
+User, Admin (User with set Role)
+
+User logs in and then makes a request to be a Coordinator and a Performer.
+User logs in and then makes a request to be a Listener and VenueHost
+User logs in and then makes a request to be a Listener
+User logs in and then makes a request to be an Accompanist
+
+NOTE: all users register and then provide their interest to be a part of the MusicRecital
+local community. 
