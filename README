@@ -19,8 +19,8 @@ To get started, please complete the following steps:
 
 2. Run "mvn jetty:run" and view the application at http://localhost:8080.
 
-3. Please post questions for this application on Google+ public community
-   "MusicRecital"
+3. Please post questions for this application after subscribing to dev@musicrecital.org
+   here: http://musicrecital.org/mailman/listinfo/dev
 
 4. More information can be found later at: www.musicrecital.org when the site is
    running. Currently, the development site is not hosted. Communicate via
