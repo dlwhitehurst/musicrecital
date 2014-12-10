@@ -5,7 +5,7 @@
     <groupId>org.musicrecital</groupId>
     <artifactId>MusicRecital</artifactId>
     <packaging>war</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>PROTOTYPE-RC1</version>
     <name>MusicRecital AppFuse Web Application</name>
     <description>
     	This project was created to build community around local amateur 
@@ -31,7 +31,7 @@
     	Currently (as of December 5, 2014), this project is under-development 
     	of the alpha (prototype) release of version 1.0 and is being built as 
     	version 1.0-SNAPSHOT. At such time the project is nearing release of 
-    	the prototype, the version for release will be 1.0.0-alpha-1.
+    	the prototype, the version for release will be PROTOTYPE-RC1.
     </description>
     <url>http://www.musicrecital.org</url>
 
