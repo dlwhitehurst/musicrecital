@@ -43,6 +43,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
@@ -61,46 +62,47 @@ import org.musicrecital.model.repertoire.Piece;
  * @version $Id$
  */
 @Entity
-@Table(name = "program")
+@Table(name = "music_program")
 public class MusicProgram extends BaseObject {
 	
 	/**
-	 * 
+	 * Relational database key or identification number
 	 */
 	private Long id;
 	
 	/**
-	 * 
+	 * Name or describing statement defining this music program
 	 */
 	protected String programName;
 	
 	/**
-	 * 
+	 * The MusicRecital user that created this music program, and was identified and
+	 * deemed an actual Producer based on the user's merit, or just reward. 
 	 */
 	protected Producer producer;
 	
 	/**
-	 * 
+	 * Collection of pieces, songs, solos, orchestrations, etc.
 	 */
 	protected Set<Piece> pieces = new HashSet<Piece>(); // empty but not-null set
 	
 	/**
-	 * 
+	 * Initial creation date
 	 */
 	protected Date created;
 	
 	/**
-	 * 
+	 * Date modified after initial creation, that date will remain unchanged.
 	 */
 	protected Date modified;
 	
 	/**
-	 * 
+	 * Id (key) identifying the User that created this object or database record 
 	 */
 	protected Long createdBy;
 	
 	/**
-	 * 
+	 * Id (key) identifying the User that has modified this object or database record
 	 */
 	protected Long modifiedBy;
 	
@@ -184,13 +186,15 @@ public class MusicProgram extends BaseObject {
 	/**
 	 * @return the pieces
 	 */
-    @ManyToMany(fetch = FetchType.EAGER)
+/*    @ManyToMany(fetch = FetchType.EAGER)
     @Fetch(FetchMode.SELECT)    
     @JoinTable(
             name = "program_piece",
             joinColumns = { @JoinColumn(name = "program_id") },
             inverseJoinColumns = @JoinColumn(name = "piece_id")
-    )	
+    )
+*/	
+	@Transient
 	public Set<Piece> getPieces() {
 		return pieces;
 	}

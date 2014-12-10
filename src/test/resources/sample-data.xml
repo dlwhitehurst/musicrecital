@@ -140,4 +140,7 @@
             <value description="role_id">-2</value>
         </row>
     </table>
+    <table name="music_program">
+    	<column></column>
+    </table>
 </dataset>

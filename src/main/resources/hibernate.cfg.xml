@@ -9,5 +9,8 @@
         <mapping class="org.musicrecital.model.User"/>
         <mapping class="org.musicrecital.model.Role"/>
         <mapping class="org.musicrecital.model.producer.MusicProgram"/>
+        <mapping class="org.musicrecital.model.producer.Producer"/>
+        <mapping class="org.musicrecital.model.repertoire.Piece"/>
+        
     </session-factory>
 </hibernate-configuration>

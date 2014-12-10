@@ -7,6 +7,32 @@
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>MusicRecital AppFuse Web Application</name>
+    <description>
+    	This project was created to build community around local amateur 
+    	musicians and listeners in their communities. This application 
+    	may provide means for amateur musicians to perform and play live
+    	without the interference of commercial promoters and third-party 
+    	music people trying to wedge themselves in between the players 
+    	that just want to play and the listeners that just want to hear
+    	good music. The music industry is very difficult to break into. 
+    	The mission of this project is to bring a little freshness to the
+    	local music communities and help people realize that our musical
+    	tastes don't have to be dictated by record labels. Independent 
+    	musicians may find this application and it's community very helpful
+    	if they are touring and want to find places to crash, people to
+    	meet, and even fill-in musicians for local venues. Basic membership
+    	at MusicRecital.org will always be free.
+    	
+    	The site at MusicRecital.org will be used to host a prototype 
+    	release for demonstration. Kickstarter.com will be used to secure
+    	strong hosting when the Java web application is ready for the 
+    	public to use.
+    	
+    	Currently (as of December 5, 2014), this project is under-development 
+    	of the alpha (prototype) release of version 1.0 and is being built as 
+    	version 1.0-SNAPSHOT. At such time the project is nearing release of 
+    	the prototype, the version for release will be 1.0.0-alpha-1.
+    </description>
     <url>http://www.musicrecital.org</url>
 
     <prerequisites>
@@ -39,12 +65,13 @@
             <timezone>-5</timezone>
         </developer>
     </developers>
-	
+
+    <!-- ssh public/private keypair authentication -->
 	<distributionManagement>
-    <site>
-      <id>harmony</id>
-      <url>scp://content@musicrecital.org:/var/www/html/project/</url>
-    </site>
+    	<site>
+      		<id>harmony</id>
+      		<url>scp://content@musicrecital.org:/var/www/html/project/</url>
+    	</site>
   	</distributionManagement>
     
     <build>
@@ -775,6 +802,9 @@
             <plugin>
                 <artifactId>maven-changes-plugin</artifactId>
                 <version>2.9</version>
+                <configuration>
+          			<useJql>true</useJql>
+        		</configuration>
             </plugin>
             <plugin>
                 <artifactId>maven-checkstyle-plugin</artifactId>
