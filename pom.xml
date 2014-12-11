@@ -949,7 +949,7 @@
         <profile>
             <id>harmony</id>
             <properties>
-            	<jdbc.user>monty</jdbc.user>
+            	<jdbc.username>monty</jdbc.username>
             	<jdbc.password/>
             </properties>
 	</profile>
