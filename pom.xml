@@ -1116,8 +1116,8 @@
         <jdbc.version>5.1.27</jdbc.version>
         <jdbc.driverClassName>com.mysql.jdbc.Driver</jdbc.driverClassName>
         <jdbc.url>jdbc:mysql://localhost/${db.name}?createDatabaseIfNotExist=true&amp;amp;useUnicode=true&amp;amp;characterEncoding=utf-8&amp;amp;autoReconnect=true</jdbc.url>
-	<jdbc.user>monty</jdbc.user>
-	<jdbc.password/>
+	<jdbc.user>${settings.user}</jdbc.user>
+	<jdbc.password>${settings.pass}</jdbc.password>
         <!-- Properties calculated by AppFuse when running full-source plugin -->
         <aspectj.version>1.7.4</aspectj.version>
         <commons.beanutils.version>1.8.3</commons.beanutils.version>
