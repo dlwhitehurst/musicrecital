@@ -27,8 +27,7 @@ public class UserListTest extends BasePageTestCase {
         ResourceBundle rb = ResourceBundle.getBundle(MESSAGES, new Locale("en"));
 
         assertTrue(doc.toString().contains("<title>" +
-                rb.getString("userProfile.title") + " | " +
-                rb.getString("webapp.name") + "</title>"));
+                rb.getString("userProfile.title") + " | MusicRecital" + "</title>")); 
     }
 
     @Test
