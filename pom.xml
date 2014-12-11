@@ -946,8 +946,8 @@
             </build>
         </profile>
         <profile>
+         	<id>harmony</id>
         	<properties>
-         		<id>harmony</id>
          		<jdbc.username>monty</jdbc.username>
          		<jdbc.password/>
          	</properties>
