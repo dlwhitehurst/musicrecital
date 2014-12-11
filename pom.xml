@@ -946,6 +946,13 @@
             </build>
         </profile>
 
+        <profile>
+            <id>harmony</id>
+            <properties>
+            	<jdbc.user>monty</jdbc.user>
+            	<jdbc.password/>
+            </properties>
+	</profile>
         <!-- ================= Production Settings Profile ================= -->
         <!-- Use "-P prod" when you want to use the settings in this profile -->
         <!-- =============================================================== -->
