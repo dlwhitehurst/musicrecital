@@ -3,4 +3,8 @@
 *.war
 *.ear
 doc/
+.settings/
+.classpath
+.gitattributes
+.project
 
