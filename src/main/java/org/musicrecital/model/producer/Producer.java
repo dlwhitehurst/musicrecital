@@ -30,7 +30,7 @@ package org.musicrecital.model.producer;
 
 /**
  * @author <a href="mailto:dlwhitehurst@me.com">David L. Whitehurst</a>
- *
+ * @version $Id$
  */
 public class Producer {
 

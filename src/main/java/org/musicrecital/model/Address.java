@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 David L. Whitehurst
+ * Copyright 2014 MusicRecital Project
  * 
  * Licensed under the Apache License, Version 2.0 
  * (the "License"); You may not use this file except 
@@ -12,8 +12,20 @@
  * either express or implied. See the License for the specific 
  * language governing permissions and limitations under the 
  * License.
- * 
+ *
+ * Code developed and licensed here for org.musicrecital packaging was 
+ * formulated, copied, written, drafted, or otherwise created by 
+ * the MusicRecital project at http://musicrecital.org. This license is 
+ * freely available to the general public and is used here because 
+ * it provides the foundation for the use, duplication, and sharing 
+ * of open source software code. The cummulative code base under this 
+ * packaging was not written, maintained, or otherwise deployed by 
+ * the Apache Group. This code does not reflect the technological 
+ * growth at apache.org or the Apache Software Foundation community 
+ * collective.
+ *
  */
+
 
 package org.musicrecital.model;
 
@@ -32,6 +44,7 @@ import org.hibernate.search.annotations.Indexed;
  * city, province and postal-code information.
  *
  * @author <a href="mailto:matt@raibledesigns.com">Matt Raible</a>
+ * @version $Id$
  */
 @Embeddable
 @Indexed

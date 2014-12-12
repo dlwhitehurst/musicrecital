@@ -1,5 +1,5 @@
 /**
- * Copyright 2014 David L. Whitehurst
+ * Copyright 2014 MusicRecital Project
  * 
  * Licensed under the Apache License, Version 2.0 
  * (the "License"); You may not use this file except 
@@ -13,9 +13,9 @@
  * language governing permissions and limitations under the 
  * License.
  *
- * Code developed and licensed here for com.dlw packaging was 
+ * Code developed and licensed here for org.musicrecital packaging was 
  * formulated, copied, written, drafted, or otherwise created by 
- * David L. Whitehurst, at dlwhitehurst@me.com. This license is 
+ * the MusicRecital project at http://musicrecital.org. This license is 
  * freely available to the general public and is used here because 
  * it provides the foundation for the use, duplication, and sharing 
  * of open source software code. The cummulative code base under this 
@@ -35,7 +35,7 @@ import org.musicrecital.model.performer.Performer;
 
 /**
  * @author <a href="mailto:dlwhitehurst@me.com">David L. Whitehurst</a>
- *
+ * @version $Id$
  */
 public class Ensemble extends Piece {
 
