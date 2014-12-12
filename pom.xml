@@ -90,18 +90,9 @@
 	
 	<ciManagement>
     	<system>Jenkins</system>
-    	<url>http://musicrecital:8080</url>
-    	<notifiers>
-      		<notifier>
-        		<type>mail</type>
-        		<sendOnError>true</sendOnError>
-        		<sendOnFailure>true</sendOnFailure>
-        		<sendOnSuccess>false</sendOnSuccess>
-        		<sendOnWarning>false</sendOnWarning>
-        		<configuration><address>admin@musicrecital.org</address></configuration>
-      		</notifier>
-    	</notifiers>
-  	</ciManagement>  	
+    	<url>http://musicrecital.org:8080</url>
+  	</ciManagement>
+  	  	
     <!-- ssh public/private keypair authentication -->
 	<distributionManagement>
     	<site>
