@@ -30,7 +30,7 @@ package org.musicrecital.model;
 
 /**
  * @author <a href="mailto:dlwhitehurst@gmail.com">David L. Whitehurst</a>
- * @version $Id$
+ *
  */
 public class Actor {
 
