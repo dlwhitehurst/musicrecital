@@ -62,10 +62,46 @@
             <id>dlwhitehurst</id>
             <name>David L. Whitehurst</name>
             <email>dlwhitehurst@gmail.com</email>
-            <timezone>-5</timezone>
+            <roles>
+        		<role>founder</role>
+        		<role>architect</role>
+        		<role>developer</role>
+      		</roles>
+      		<timezone>America/New_York</timezone>
         </developer>
     </developers>
-
+    
+	<mailingLists>
+    	<mailingList>
+      		<name>Dev List</name>
+      		<subscribe>http://musicrecital.org/mailman/listinfo/dev</subscribe>
+      		<unsubscribe>http://musicrecital.org/mailman/listinfo/dev</unsubscribe>
+      		<post>users@musicrecital.org</post>
+      		<archive>http://musicrecital.org/pipermail/dev/</archive>
+    	</mailingList>
+    	<mailingList>
+      		<name>User List</name>
+      		<subscribe>http://musicrecital.org/mailman/listinfo/users</subscribe>
+      		<unsubscribe>http://musicrecital.org/mailman/listinfo/users</unsubscribe>
+      		<post>users@musicrecital.org</post>
+      		<archive>http://musicrecital.org/pipermail/users/</archive>
+    	</mailingList>
+  	</mailingLists>
+	
+	<ciManagement>
+    	<system>Jenkins</system>
+    	<url>http://musicrecital:8080</url>
+    	<notifiers>
+      		<notifier>
+        		<type>mail</type>
+        		<sendOnError>true</sendOnError>
+        		<sendOnFailure>true</sendOnFailure>
+        		<sendOnSuccess>false</sendOnSuccess>
+        		<sendOnWarning>false</sendOnWarning>
+        		<configuration><address>admin@musicrecital.org</address></configuration>
+      		</notifier>
+    	</notifiers>
+  	</ciManagement>  	
     <!-- ssh public/private keypair authentication -->
 	<distributionManagement>
     	<site>
