@@ -831,6 +831,9 @@
                 <version>2.9</version>
                 <configuration>
           			<useJql>true</useJql>
+          			<!-- remove user/password after site:deploy -->
+          			<jiraUser></jiraUser>
+          			<jiraPassword></jiraPassword>
         		</configuration>
             </plugin>
             <plugin>
