@@ -3,10 +3,10 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.musicrecital</groupId>
-    <artifactId>MusicRecital</artifactId>
+    <artifactId>musicrecital-web</artifactId>
     <packaging>war</packaging>
     <version>PROTOTYPE-RC1</version>
-    <name>MusicRecital AppFuse Web Application</name>
+    <name>MusicRecital</name>
     <description>
     	This project was created to build community around local amateur 
     	musicians and listeners in their communities. This application 
