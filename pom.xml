@@ -5,7 +5,7 @@
     <groupId>org.musicrecital</groupId>
     <artifactId>musicrecital-web</artifactId>
     <packaging>war</packaging>
-    <version>PROTOTYPE-RC1</version>
+    <version>PROTOTYPE_RC1</version>
     <name>MusicRecital</name>
     <description>
     	This project was created to build community around local amateur 
