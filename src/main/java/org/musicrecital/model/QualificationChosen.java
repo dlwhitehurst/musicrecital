@@ -28,10 +28,41 @@
 
 package org.musicrecital.model;
 
+import java.util.Date;
+
+import javax.persistence.Embedded;
+
+import org.hibernate.search.annotations.IndexedEmbedded;
+import org.musicrecital.model.frag.AuditingFrag;
+import org.musicrecital.model.frag.NamespaceFrag;
+
 /**
  * @author <a href="mailto:dlwhitehurst@gmail.com">David L. Whitehurst</a>
  * @version $Id$
  */
 public class QualificationChosen {
 
+	private Qualification qualification;
+	
+	private Date roleChosen;
+	
+	private AuditingFrag auditing;
+	
+	private NamespaceFrag namespace;
+
+	private Boolean isQualificationMerited;
+	
+	
+	@Embedded
+    @IndexedEmbedded
+    public AuditingFrag getAuditing() {
+        return auditing;
+    }
+	
+	@Embedded
+    @IndexedEmbedded
+    public NamespaceFrag getNamespaceFrag() {
+        return namespace;
+    }
+	
 }

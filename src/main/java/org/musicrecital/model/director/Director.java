@@ -28,13 +28,13 @@
 
 package org.musicrecital.model.director;
 
-import org.musicrecital.model.BaseObject;
+import org.musicrecital.model.Actor;
 
 /**
  * @author <a href="mailto:dlwhitehurst@me.com">David L. Whitehurst</a>
  * @version $Id$
  */
-public class Director extends BaseObject {
+public class Director extends Actor {
 
 	private Long id;
 
@@ -64,5 +64,6 @@ public class Director extends BaseObject {
 		// TODO Auto-generated method stub
 		return 0;
 	}
+
 	
 }

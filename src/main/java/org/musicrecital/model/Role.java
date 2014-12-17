@@ -31,18 +31,26 @@ package org.musicrecital.model;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 import org.springframework.security.core.GrantedAuthority;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.persistence.Transient;
+
 import java.io.Serializable;
+import java.util.Set;
 
 /**
  * This class is used to represent available roles in the database.
@@ -66,6 +74,7 @@ public class Role extends BaseObject implements Serializable, GrantedAuthority {
     private Long id;
     private String name;
     private String description;
+    private Set<Qualification> qualifications;
 
     /**
      * Default constructor - creates a new instance with no values set.
@@ -151,4 +160,25 @@ public class Role extends BaseObject implements Serializable, GrantedAuthority {
                 .append(this.name)
                 .toString();
     }
+
+	/**
+	 * @return the qualifications
+	 */
+    @ManyToMany(fetch = FetchType.EAGER)
+    @Fetch(FetchMode.SELECT)    
+    @JoinTable(
+            name = "role_qualification",
+            joinColumns = { @JoinColumn(name = "role_id") },
+            inverseJoinColumns = @JoinColumn(name = "qualification_id")
+    )
+	public Set<Qualification> getQualifications() {
+		return qualifications;
+	}
+
+	/**
+	 * @param qualifications the qualifications to set
+	 */
+	public void setQualifications(Set<Qualification> qualifications) {
+		this.qualifications = qualifications;
+	}
 }

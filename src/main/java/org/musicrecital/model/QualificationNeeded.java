@@ -32,6 +32,35 @@ package org.musicrecital.model;
  * @author <a href="mailto:dlwhitehurst@gmail.com">David L. Whitehurst</a>
  * @version $Id$
  */
-public class QualificationNeeded {
+public class QualificationNeeded extends BaseObject {
+
+	private Long id;
+	
+	/* (non-Javadoc)
+	 * @see org.musicrecital.model.BaseObject#toString()
+	 */
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/* (non-Javadoc)
+	 * @see org.musicrecital.model.BaseObject#equals(java.lang.Object)
+	 */
+	@Override
+	public boolean equals(Object o) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	/* (non-Javadoc)
+	 * @see org.musicrecital.model.BaseObject#hashCode()
+	 */
+	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 
 }

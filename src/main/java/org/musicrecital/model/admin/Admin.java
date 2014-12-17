@@ -28,10 +28,12 @@
 
 package org.musicrecital.model.admin;
 
+import org.musicrecital.model.BaseObject;
+
 /**
  * @author <a href="mailto:dlwhitehurst@gmail.com">David L. Whitehurst</a>
  * @version $Id$
  */
-public class Admin {
+public abstract class Admin extends BaseObject {
 
 }

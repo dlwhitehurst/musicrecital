@@ -28,10 +28,17 @@
 
 package org.musicrecital.model;
 
+import java.util.Set;
+
 /**
  * @author <a href="mailto:dlwhitehurst@gmail.com">David L. Whitehurst</a>
  *
  */
-public class Actor {
-
+public abstract class Actor extends BaseObject {
+	
+	protected Set<Permission> permissions;
+	
+	protected Set<QualificationChosen> qualificationsChosen;
+	
+	protected Set<Responsibility> responsibilities;
 }

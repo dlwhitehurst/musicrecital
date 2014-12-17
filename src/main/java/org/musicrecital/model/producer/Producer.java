@@ -28,10 +28,39 @@
 
 package org.musicrecital.model.producer;
 
+import org.musicrecital.model.Actor;
+
 /**
  * @author <a href="mailto:dlwhitehurst@me.com">David L. Whitehurst</a>
  * @version $Id$
  */
-public class Producer {
+public class Producer extends Actor {
+
+	/* (non-Javadoc)
+	 * @see org.musicrecital.model.BaseObject#toString()
+	 */
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/* (non-Javadoc)
+	 * @see org.musicrecital.model.BaseObject#equals(java.lang.Object)
+	 */
+	@Override
+	public boolean equals(Object o) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	/* (non-Javadoc)
+	 * @see org.musicrecital.model.BaseObject#hashCode()
+	 */
+	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 
 }
