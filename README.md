@@ -20,7 +20,7 @@ MySQL can be easily installed on your development machine, however installations
 system and distribution. MySQL installation and administration are beyond the scope of this
 README but the following prerequisites are needed at a minimum:
 
-1. [Java][] 7.x 
+1. [Java][] 6.x
 2. [Apache Maven][] 3.1.0
 3. [MySQL][] 5.x
 
