@@ -32,7 +32,7 @@ import java.util.Set;
 
 /**
  * @author <a href="mailto:dlwhitehurst@gmail.com">David L. Whitehurst</a>
- *
+ * @version $Id$
  */
 public abstract class Actor extends BaseObject {
 	
