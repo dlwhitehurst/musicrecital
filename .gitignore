@@ -4,6 +4,7 @@
 *.ear
 doc/
 .settings/
+.idea/
 .classpath
 .gitattributes
 .project
